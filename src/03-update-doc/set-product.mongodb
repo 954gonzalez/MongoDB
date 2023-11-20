@@ -1,0 +1,147 @@
+// set-product.mongodb
+
+use("pet_store")
+
+// products.mongodb
+
+use("pet_store")
+
+
+db.products.updateOne(
+  { _id: 1 },
+  {
+    $set: {
+      title: 'Producto para Mascotas',
+      price: 600,
+      description: 'juguete para morder',
+      category: 'Juguetes Mejorados',
+      image: 'juguete1.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 2 },
+  {
+    $set: {
+      title: 'producto para gatos',
+      price: 40,
+      description: 'cama acolchada doble ',
+      category: 'Camas Mejoradas',
+      image: 'cama2.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 3 },
+  {
+    $set: {
+      title: 'distribuidor de concentrado',
+      price: 80,
+      description: 'Distribuidor con doble funcionalidad para agua y concentrado',
+      category: 'Golosinas Premium',
+      image: 'Distribuidor.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 4 },
+  {
+    $set: {
+      title: 'collar de perlas',
+      price: 700,
+      description: 'collar fino de perlas blancas',
+      category: 'Accesorios Elegantes',
+      image: 'accesorio4.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 5 },
+  {
+    $set: {
+      title: 'balon de lana',
+      price: 45,
+      description: 'balon de lana mejorado',
+      category: 'Juguetes Interactivos',
+      image: 'balon5.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 6 },
+  {
+    $set: {
+      title: 'shampoo',
+      price: 60,
+      description: 'shampoo para las pulgas',
+      category: 'Cuidado Personal Mejorado',
+      image: 'champu6.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 7 },
+  {
+    $set: {
+      title: 'correa de cuero',
+      price: 30,
+      description: 'correa resistente y de buen material',
+      category: 'Accesorios Resistentes',
+      image: 'correa7.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { __id: 8 },
+  {
+    $set: {
+      title: 'casa iglu',
+      price: 90,
+      description: 'casa iglu con material termico',
+      category: 'Viviendas de iglu',
+      image: 'casa8.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 9 },
+  {
+    $set: {
+      title: 'catshop',
+      price: 50,
+      description: 'alimento alto en proteinas',
+      category: 'Alimentos Saludables',
+      image: 'comida9.jpg'
+    }
+  }
+)
+
+
+db.products.updateOne(
+  { _id: 10 },
+  {
+    $set: {
+      title: 'laser',
+      price: 100,
+      description: 'laser para gatos',
+      category: 'Juguetes Avanzados',
+      image: 'nlaser10.jpg'
+    }
+  }
+)
+
